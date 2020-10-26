@@ -8,11 +8,12 @@ import (
 func main() {
 
     var input string
-
+    fmt.Println("Enter string: ")
 
     for {
-        fmt.Scanln(input)
-        cmd.Cmd(input)
+        fmt.Scanln(&input)
+        t := cmd.Cmd(input)
+        fmt.Println(t)
     }
 
     // Read all tokens
