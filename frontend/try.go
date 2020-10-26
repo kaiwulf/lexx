@@ -10,10 +10,13 @@ func main() {
     var input string
     fmt.Println("Enter string: ")
 
+    var prompt string = "lexx>"
+
     for {
+        fmt.Printf(prompt)
         fmt.Scanln(&input)
         t := cmd.Cmd(input)
-        fmt.Println(t)
+        fmt.Println(prompt,t)
     }
 
     // Read all tokens
