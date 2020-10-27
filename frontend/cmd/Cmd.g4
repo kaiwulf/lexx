@@ -2,7 +2,7 @@
 grammar Cmd;
 
 // Tokens
-NEW: 'new';
+// NEW: 'new';
 MUL: '*' ;
 DIV: '/' ;
 ADD: '+' ;
@@ -18,7 +18,7 @@ start:
 
 
 command
-    : NEW VAR;
+    : op=('new') VAR;
 
 expression
    : expression op=('*'|'/') expression # MulDiv

@@ -33,6 +33,8 @@ func (l *CmdListener) pop() int {
     return result
 }
 
+func (l *CmdListener) ExitVar(c *parser.)
+
 // ExitMulDiv is called when exiting the MulDiv production.
 func (l *CmdListener) ExitMulDiv(c *parser.MulDivContext) {
     right, left := l.pop(), l.pop()

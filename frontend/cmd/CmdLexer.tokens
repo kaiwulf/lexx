@@ -1,0 +1,13 @@
+T__0=1
+MUL=2
+DIV=3
+ADD=4
+SUB=5
+NUMBER=6
+WHITESPACE=7
+VAR=8
+'new'=1
+'*'=2
+'/'=3
+'+'=4
+'-'=5
