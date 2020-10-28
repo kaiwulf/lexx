@@ -1,4 +1,4 @@
-// Code generated from Cmd.g4 by ANTLR 4.7.1. DO NOT EDIT.
+// Code generated from cmd/Cmd.g4 by ANTLR 4.7.1. DO NOT EDIT.
 
 package parser // Cmd
 
@@ -17,17 +17,23 @@ type CmdListener interface {
 	// EnterCommand is called when entering the command production.
 	EnterCommand(c *CommandContext)
 
+	// EnterMulDivPre is called when entering the MulDivPre production.
+	EnterMulDivPre(c *MulDivPreContext)
+
+	// EnterAddSubPre is called when entering the AddSubPre production.
+	EnterAddSubPre(c *AddSubPreContext)
+
 	// EnterNumber is called when entering the Number production.
 	EnterNumber(c *NumberContext)
-
-	// EnterFunc is called when entering the func production.
-	EnterFunc(c *FuncContext)
 
 	// EnterMulDiv is called when entering the MulDiv production.
 	EnterMulDiv(c *MulDivContext)
 
 	// EnterAddSub is called when entering the AddSub production.
 	EnterAddSub(c *AddSubContext)
+
+	// EnterFun is called when entering the fun production.
+	EnterFun(c *FunContext)
 
 	// EnterPrefix is called when entering the prefix production.
 	EnterPrefix(c *PrefixContext)
@@ -41,17 +47,23 @@ type CmdListener interface {
 	// ExitCommand is called when exiting the command production.
 	ExitCommand(c *CommandContext)
 
+	// ExitMulDivPre is called when exiting the MulDivPre production.
+	ExitMulDivPre(c *MulDivPreContext)
+
+	// ExitAddSubPre is called when exiting the AddSubPre production.
+	ExitAddSubPre(c *AddSubPreContext)
+
 	// ExitNumber is called when exiting the Number production.
 	ExitNumber(c *NumberContext)
-
-	// ExitFunc is called when exiting the func production.
-	ExitFunc(c *FuncContext)
 
 	// ExitMulDiv is called when exiting the MulDiv production.
 	ExitMulDiv(c *MulDivContext)
 
 	// ExitAddSub is called when exiting the AddSub production.
 	ExitAddSub(c *AddSubContext)
+
+	// ExitFun is called when exiting the fun production.
+	ExitFun(c *FunContext)
 
 	// ExitPrefix is called when exiting the prefix production.
 	ExitPrefix(c *PrefixContext)

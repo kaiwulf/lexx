@@ -33,7 +33,9 @@ func (l *CmdListener) pop() int {
     return result
 }
 
-func (l *CmdListener) ExitVar(c *parser.)
+// func (l *CmdListener) ExitVar(c *parser.)
+
+// func (l* CmdListener) ExitMulDivPre(c *parser.MulDivPreContext)
 
 // ExitMulDiv is called when exiting the MulDiv production.
 func (l *CmdListener) ExitMulDiv(c *parser.MulDivContext) {

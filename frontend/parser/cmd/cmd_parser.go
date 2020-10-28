@@ -1,4 +1,4 @@
-// Code generated from Cmd.g4 by ANTLR 4.7.1. DO NOT EDIT.
+// Code generated from cmd/Cmd.g4 by ANTLR 4.7.1. DO NOT EDIT.
 
 package parser // Cmd
 
@@ -16,28 +16,33 @@ var _ = reflect.Copy
 var _ = strconv.Itoa
 
 var parserATN = []uint16{
-	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 14, 52, 4,
-	2, 9, 2, 4, 3, 9, 3, 4, 4, 9, 4, 4, 5, 9, 5, 4, 6, 9, 6, 3, 2, 6, 2, 14,
-	10, 2, 13, 2, 14, 2, 15, 3, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 6, 3, 24,
-	10, 3, 13, 3, 14, 3, 25, 3, 4, 3, 4, 3, 4, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5,
-	3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 7, 5, 45, 10, 5,
-	12, 5, 14, 5, 48, 11, 5, 3, 6, 3, 6, 3, 6, 2, 3, 8, 7, 2, 4, 6, 8, 10,
-	2, 4, 3, 2, 5, 6, 3, 2, 7, 8, 2, 54, 2, 13, 3, 2, 2, 2, 4, 23, 3, 2, 2,
-	2, 6, 27, 3, 2, 2, 2, 8, 30, 3, 2, 2, 2, 10, 49, 3, 2, 2, 2, 12, 14, 5,
-	4, 3, 2, 13, 12, 3, 2, 2, 2, 14, 15, 3, 2, 2, 2, 15, 13, 3, 2, 2, 2, 15,
-	16, 3, 2, 2, 2, 16, 17, 3, 2, 2, 2, 17, 18, 7, 2, 2, 3, 18, 3, 3, 2, 2,
-	2, 19, 24, 5, 6, 4, 2, 20, 24, 5, 8, 5, 2, 21, 24, 5, 10, 6, 2, 22, 24,
-	7, 13, 2, 2, 23, 19, 3, 2, 2, 2, 23, 20, 3, 2, 2, 2, 23, 21, 3, 2, 2, 2,
-	23, 22, 3, 2, 2, 2, 24, 25, 3, 2, 2, 2, 25, 23, 3, 2, 2, 2, 25, 26, 3,
-	2, 2, 2, 26, 5, 3, 2, 2, 2, 27, 28, 7, 9, 2, 2, 28, 29, 7, 14, 2, 2, 29,
-	7, 3, 2, 2, 2, 30, 31, 8, 5, 1, 2, 31, 32, 7, 11, 2, 2, 32, 46, 3, 2, 2,
-	2, 33, 34, 12, 6, 2, 2, 34, 35, 9, 2, 2, 2, 35, 45, 5, 8, 5, 7, 36, 37,
-	12, 5, 2, 2, 37, 38, 9, 3, 2, 2, 38, 45, 5, 8, 5, 6, 39, 40, 12, 4, 2,
-	2, 40, 41, 7, 3, 2, 2, 41, 42, 5, 8, 5, 2, 42, 43, 7, 4, 2, 2, 43, 45,
-	3, 2, 2, 2, 44, 33, 3, 2, 2, 2, 44, 36, 3, 2, 2, 2, 44, 39, 3, 2, 2, 2,
-	45, 48, 3, 2, 2, 2, 46, 44, 3, 2, 2, 2, 46, 47, 3, 2, 2, 2, 47, 9, 3, 2,
-	2, 2, 48, 46, 3, 2, 2, 2, 49, 50, 7, 10, 2, 2, 50, 11, 3, 2, 2, 2, 7, 15,
-	23, 25, 44, 46,
+	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 14, 64, 4,
+	2, 9, 2, 4, 3, 9, 3, 4, 4, 9, 4, 4, 5, 9, 5, 4, 6, 9, 6, 4, 7, 9, 7, 3,
+	2, 6, 2, 16, 10, 2, 13, 2, 14, 2, 17, 3, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3,
+	3, 3, 3, 6, 3, 27, 10, 3, 13, 3, 14, 3, 28, 3, 4, 3, 4, 3, 4, 3, 5, 3,
+	5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 5, 5, 44, 10, 5, 3,
+	5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 7, 5, 52, 10, 5, 12, 5, 14, 5, 55, 11,
+	5, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 7, 3, 7, 3, 7, 2, 3, 8, 8, 2, 4, 6,
+	8, 10, 12, 2, 4, 3, 2, 5, 6, 3, 2, 7, 8, 2, 67, 2, 15, 3, 2, 2, 2, 4, 26,
+	3, 2, 2, 2, 6, 30, 3, 2, 2, 2, 8, 43, 3, 2, 2, 2, 10, 56, 3, 2, 2, 2, 12,
+	61, 3, 2, 2, 2, 14, 16, 5, 4, 3, 2, 15, 14, 3, 2, 2, 2, 16, 17, 3, 2, 2,
+	2, 17, 15, 3, 2, 2, 2, 17, 18, 3, 2, 2, 2, 18, 19, 3, 2, 2, 2, 19, 20,
+	7, 2, 2, 3, 20, 3, 3, 2, 2, 2, 21, 27, 5, 6, 4, 2, 22, 27, 5, 8, 5, 2,
+	23, 27, 5, 12, 7, 2, 24, 27, 5, 10, 6, 2, 25, 27, 7, 13, 2, 2, 26, 21,
+	3, 2, 2, 2, 26, 22, 3, 2, 2, 2, 26, 23, 3, 2, 2, 2, 26, 24, 3, 2, 2, 2,
+	26, 25, 3, 2, 2, 2, 27, 28, 3, 2, 2, 2, 28, 26, 3, 2, 2, 2, 28, 29, 3,
+	2, 2, 2, 29, 5, 3, 2, 2, 2, 30, 31, 7, 9, 2, 2, 31, 32, 7, 14, 2, 2, 32,
+	7, 3, 2, 2, 2, 33, 34, 8, 5, 1, 2, 34, 35, 9, 2, 2, 2, 35, 36, 5, 8, 5,
+	2, 36, 37, 5, 8, 5, 5, 37, 44, 3, 2, 2, 2, 38, 39, 9, 3, 2, 2, 39, 40,
+	5, 8, 5, 2, 40, 41, 5, 8, 5, 4, 41, 44, 3, 2, 2, 2, 42, 44, 7, 11, 2, 2,
+	43, 33, 3, 2, 2, 2, 43, 38, 3, 2, 2, 2, 43, 42, 3, 2, 2, 2, 44, 53, 3,
+	2, 2, 2, 45, 46, 12, 7, 2, 2, 46, 47, 9, 2, 2, 2, 47, 52, 5, 8, 5, 8, 48,
+	49, 12, 6, 2, 2, 49, 50, 9, 3, 2, 2, 50, 52, 5, 8, 5, 7, 51, 45, 3, 2,
+	2, 2, 51, 48, 3, 2, 2, 2, 52, 55, 3, 2, 2, 2, 53, 51, 3, 2, 2, 2, 53, 54,
+	3, 2, 2, 2, 54, 9, 3, 2, 2, 2, 55, 53, 3, 2, 2, 2, 56, 57, 7, 14, 2, 2,
+	57, 58, 7, 3, 2, 2, 58, 59, 7, 14, 2, 2, 59, 60, 7, 4, 2, 2, 60, 11, 3,
+	2, 2, 2, 61, 62, 7, 10, 2, 2, 62, 13, 3, 2, 2, 2, 8, 17, 26, 28, 43, 51,
+	53,
 }
 var deserializer = antlr.NewATNDeserializer(nil)
 var deserializedATN = deserializer.DeserializeFromUInt16(parserATN)
@@ -51,7 +56,7 @@ var symbolicNames = []string{
 }
 
 var ruleNames = []string{
-	"start", "line", "command", "expression", "prefix",
+	"start", "line", "command", "expression", "fun", "prefix",
 }
 var decisionToDFA = make([]*antlr.DFA, len(deserializedATN.DecisionToState))
 
@@ -102,7 +107,8 @@ const (
 	CmdParserRULE_line       = 1
 	CmdParserRULE_command    = 2
 	CmdParserRULE_expression = 3
-	CmdParserRULE_prefix     = 4
+	CmdParserRULE_fun        = 4
+	CmdParserRULE_prefix     = 5
 )
 
 // IStartContext is an interface to support dynamic dispatch.
@@ -212,22 +218,22 @@ func (p *CmdParser) Start() (localctx IStartContext) {
 	}()
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(11)
+	p.SetState(13)
 	p.GetErrorHandler().Sync(p)
 	_la = p.GetTokenStream().LA(1)
 
-	for ok := true; ok; ok = (((_la)&-(0x1f+1)) == 0 && ((1<<uint(_la))&((1<<CmdParserNEW)|(1<<CmdParserNWE)|(1<<CmdParserNUMBER)|(1<<CmdParserNEWLINE))) != 0) {
+	for ok := true; ok; ok = (((_la)&-(0x1f+1)) == 0 && ((1<<uint(_la))&((1<<CmdParserMUL)|(1<<CmdParserDIV)|(1<<CmdParserADD)|(1<<CmdParserSUB)|(1<<CmdParserNEW)|(1<<CmdParserNWE)|(1<<CmdParserNUMBER)|(1<<CmdParserNEWLINE)|(1<<CmdParserVAR))) != 0) {
 		{
-			p.SetState(10)
+			p.SetState(12)
 			p.Line()
 		}
 
-		p.SetState(13)
+		p.SetState(15)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(15)
+		p.SetState(17)
 		p.Match(CmdParserEOF)
 	}
 
@@ -341,6 +347,29 @@ func (s *LineContext) Prefix(i int) IPrefixContext {
 	return t.(IPrefixContext)
 }
 
+func (s *LineContext) AllFun() []IFunContext {
+	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IFunContext)(nil)).Elem())
+	var tst = make([]IFunContext, len(ts))
+
+	for i, t := range ts {
+		if t != nil {
+			tst[i] = t.(IFunContext)
+		}
+	}
+
+	return tst
+}
+
+func (s *LineContext) Fun(i int) IFunContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IFunContext)(nil)).Elem(), i)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IFunContext)
+}
+
 func (s *LineContext) AllNEWLINE() []antlr.TerminalNode {
 	return s.GetTokens(CmdParserNEWLINE)
 }
@@ -392,37 +421,43 @@ func (p *CmdParser) Line() (localctx ILineContext) {
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(21)
+	p.SetState(24)
 	p.GetErrorHandler().Sync(p)
 	_alt = 1
 	for ok := true; ok; ok = _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		switch _alt {
 		case 1:
-			p.SetState(21)
+			p.SetState(24)
 			p.GetErrorHandler().Sync(p)
 
 			switch p.GetTokenStream().LA(1) {
 			case CmdParserNEW:
 				{
-					p.SetState(17)
+					p.SetState(19)
 					p.Command()
 				}
 
-			case CmdParserNUMBER:
+			case CmdParserMUL, CmdParserDIV, CmdParserADD, CmdParserSUB, CmdParserNUMBER:
 				{
-					p.SetState(18)
+					p.SetState(20)
 					p.expression(0)
 				}
 
 			case CmdParserNWE:
 				{
-					p.SetState(19)
+					p.SetState(21)
 					p.Prefix()
+				}
+
+			case CmdParserVAR:
+				{
+					p.SetState(22)
+					p.Fun()
 				}
 
 			case CmdParserNEWLINE:
 				{
-					p.SetState(20)
+					p.SetState(23)
 					p.Match(CmdParserNEWLINE)
 				}
 
@@ -434,7 +469,7 @@ func (p *CmdParser) Line() (localctx ILineContext) {
 			panic(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
 		}
 
-		p.SetState(23)
+		p.SetState(26)
 		p.GetErrorHandler().Sync(p)
 		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 2, p.GetParserRuleContext())
 	}
@@ -530,11 +565,11 @@ func (p *CmdParser) Command() (localctx ICommandContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(25)
+		p.SetState(28)
 		p.Match(CmdParserNEW)
 	}
 	{
-		p.SetState(26)
+		p.SetState(29)
 		p.Match(CmdParserVAR)
 	}
 
@@ -591,6 +626,122 @@ func (s *ExpressionContext) ToStringTree(ruleNames []string, recog antlr.Recogni
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
+type MulDivPreContext struct {
+	*ExpressionContext
+	op antlr.Token
+}
+
+func NewMulDivPreContext(parser antlr.Parser, ctx antlr.ParserRuleContext) *MulDivPreContext {
+	var p = new(MulDivPreContext)
+
+	p.ExpressionContext = NewEmptyExpressionContext()
+	p.parser = parser
+	p.CopyFrom(ctx.(*ExpressionContext))
+
+	return p
+}
+
+func (s *MulDivPreContext) GetOp() antlr.Token { return s.op }
+
+func (s *MulDivPreContext) SetOp(v antlr.Token) { s.op = v }
+
+func (s *MulDivPreContext) GetRuleContext() antlr.RuleContext {
+	return s
+}
+
+func (s *MulDivPreContext) AllExpression() []IExpressionContext {
+	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IExpressionContext)(nil)).Elem())
+	var tst = make([]IExpressionContext, len(ts))
+
+	for i, t := range ts {
+		if t != nil {
+			tst[i] = t.(IExpressionContext)
+		}
+	}
+
+	return tst
+}
+
+func (s *MulDivPreContext) Expression(i int) IExpressionContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IExpressionContext)(nil)).Elem(), i)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IExpressionContext)
+}
+
+func (s *MulDivPreContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(CmdListener); ok {
+		listenerT.EnterMulDivPre(s)
+	}
+}
+
+func (s *MulDivPreContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(CmdListener); ok {
+		listenerT.ExitMulDivPre(s)
+	}
+}
+
+type AddSubPreContext struct {
+	*ExpressionContext
+	op antlr.Token
+}
+
+func NewAddSubPreContext(parser antlr.Parser, ctx antlr.ParserRuleContext) *AddSubPreContext {
+	var p = new(AddSubPreContext)
+
+	p.ExpressionContext = NewEmptyExpressionContext()
+	p.parser = parser
+	p.CopyFrom(ctx.(*ExpressionContext))
+
+	return p
+}
+
+func (s *AddSubPreContext) GetOp() antlr.Token { return s.op }
+
+func (s *AddSubPreContext) SetOp(v antlr.Token) { s.op = v }
+
+func (s *AddSubPreContext) GetRuleContext() antlr.RuleContext {
+	return s
+}
+
+func (s *AddSubPreContext) AllExpression() []IExpressionContext {
+	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IExpressionContext)(nil)).Elem())
+	var tst = make([]IExpressionContext, len(ts))
+
+	for i, t := range ts {
+		if t != nil {
+			tst[i] = t.(IExpressionContext)
+		}
+	}
+
+	return tst
+}
+
+func (s *AddSubPreContext) Expression(i int) IExpressionContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IExpressionContext)(nil)).Elem(), i)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IExpressionContext)
+}
+
+func (s *AddSubPreContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(CmdListener); ok {
+		listenerT.EnterAddSubPre(s)
+	}
+}
+
+func (s *AddSubPreContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(CmdListener); ok {
+		listenerT.ExitAddSubPre(s)
+	}
+}
+
 type NumberContext struct {
 	*ExpressionContext
 }
@@ -622,59 +773,6 @@ func (s *NumberContext) EnterRule(listener antlr.ParseTreeListener) {
 func (s *NumberContext) ExitRule(listener antlr.ParseTreeListener) {
 	if listenerT, ok := listener.(CmdListener); ok {
 		listenerT.ExitNumber(s)
-	}
-}
-
-type FuncContext struct {
-	*ExpressionContext
-}
-
-func NewFuncContext(parser antlr.Parser, ctx antlr.ParserRuleContext) *FuncContext {
-	var p = new(FuncContext)
-
-	p.ExpressionContext = NewEmptyExpressionContext()
-	p.parser = parser
-	p.CopyFrom(ctx.(*ExpressionContext))
-
-	return p
-}
-
-func (s *FuncContext) GetRuleContext() antlr.RuleContext {
-	return s
-}
-
-func (s *FuncContext) AllExpression() []IExpressionContext {
-	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IExpressionContext)(nil)).Elem())
-	var tst = make([]IExpressionContext, len(ts))
-
-	for i, t := range ts {
-		if t != nil {
-			tst[i] = t.(IExpressionContext)
-		}
-	}
-
-	return tst
-}
-
-func (s *FuncContext) Expression(i int) IExpressionContext {
-	var t = s.GetTypedRuleContext(reflect.TypeOf((*IExpressionContext)(nil)).Elem(), i)
-
-	if t == nil {
-		return nil
-	}
-
-	return t.(IExpressionContext)
-}
-
-func (s *FuncContext) EnterRule(listener antlr.ParseTreeListener) {
-	if listenerT, ok := listener.(CmdListener); ok {
-		listenerT.EnterFunc(s)
-	}
-}
-
-func (s *FuncContext) ExitRule(listener antlr.ParseTreeListener) {
-	if listenerT, ok := listener.(CmdListener); ok {
-		listenerT.ExitFunc(s)
 	}
 }
 
@@ -827,19 +925,89 @@ func (p *CmdParser) expression(_p int) (localctx IExpressionContext) {
 	var _alt int
 
 	p.EnterOuterAlt(localctx, 1)
-	localctx = NewNumberContext(p, localctx)
-	p.SetParserRuleContext(localctx)
-	_prevctx = localctx
-
-	{
-		p.SetState(29)
-		p.Match(CmdParserNUMBER)
-	}
-
-	p.GetParserRuleContext().SetStop(p.GetTokenStream().LT(-1))
-	p.SetState(44)
+	p.SetState(41)
 	p.GetErrorHandler().Sync(p)
-	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 4, p.GetParserRuleContext())
+
+	switch p.GetTokenStream().LA(1) {
+	case CmdParserMUL, CmdParserDIV:
+		localctx = NewMulDivPreContext(p, localctx)
+		p.SetParserRuleContext(localctx)
+		_prevctx = localctx
+
+		{
+			p.SetState(32)
+
+			var _lt = p.GetTokenStream().LT(1)
+
+			localctx.(*MulDivPreContext).op = _lt
+
+			_la = p.GetTokenStream().LA(1)
+
+			if !(_la == CmdParserMUL || _la == CmdParserDIV) {
+				var _ri = p.GetErrorHandler().RecoverInline(p)
+
+				localctx.(*MulDivPreContext).op = _ri
+			} else {
+				p.GetErrorHandler().ReportMatch(p)
+				p.Consume()
+			}
+		}
+		{
+			p.SetState(33)
+			p.expression(0)
+		}
+		{
+			p.SetState(34)
+			p.expression(3)
+		}
+
+	case CmdParserADD, CmdParserSUB:
+		localctx = NewAddSubPreContext(p, localctx)
+		p.SetParserRuleContext(localctx)
+		_prevctx = localctx
+		{
+			p.SetState(36)
+
+			var _lt = p.GetTokenStream().LT(1)
+
+			localctx.(*AddSubPreContext).op = _lt
+
+			_la = p.GetTokenStream().LA(1)
+
+			if !(_la == CmdParserADD || _la == CmdParserSUB) {
+				var _ri = p.GetErrorHandler().RecoverInline(p)
+
+				localctx.(*AddSubPreContext).op = _ri
+			} else {
+				p.GetErrorHandler().ReportMatch(p)
+				p.Consume()
+			}
+		}
+		{
+			p.SetState(37)
+			p.expression(0)
+		}
+		{
+			p.SetState(38)
+			p.expression(2)
+		}
+
+	case CmdParserNUMBER:
+		localctx = NewNumberContext(p, localctx)
+		p.SetParserRuleContext(localctx)
+		_prevctx = localctx
+		{
+			p.SetState(40)
+			p.Match(CmdParserNUMBER)
+		}
+
+	default:
+		panic(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
+	}
+	p.GetParserRuleContext().SetStop(p.GetTokenStream().LT(-1))
+	p.SetState(51)
+	p.GetErrorHandler().Sync(p)
+	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 5, p.GetParserRuleContext())
 
 	for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 		if _alt == 1 {
@@ -847,19 +1015,19 @@ func (p *CmdParser) expression(_p int) (localctx IExpressionContext) {
 				p.TriggerExitRuleEvent()
 			}
 			_prevctx = localctx
-			p.SetState(42)
+			p.SetState(49)
 			p.GetErrorHandler().Sync(p)
-			switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 3, p.GetParserRuleContext()) {
+			switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 4, p.GetParserRuleContext()) {
 			case 1:
 				localctx = NewMulDivContext(p, NewExpressionContext(p, _parentctx, _parentState))
 				p.PushNewRecursionContext(localctx, _startState, CmdParserRULE_expression)
-				p.SetState(31)
+				p.SetState(43)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 4)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 4)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 5)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 5)", ""))
 				}
 				{
-					p.SetState(32)
+					p.SetState(44)
 
 					var _lt = p.GetTokenStream().LT(1)
 
@@ -877,20 +1045,20 @@ func (p *CmdParser) expression(_p int) (localctx IExpressionContext) {
 					}
 				}
 				{
-					p.SetState(33)
-					p.expression(5)
+					p.SetState(45)
+					p.expression(6)
 				}
 
 			case 2:
 				localctx = NewAddSubContext(p, NewExpressionContext(p, _parentctx, _parentState))
 				p.PushNewRecursionContext(localctx, _startState, CmdParserRULE_expression)
-				p.SetState(34)
+				p.SetState(46)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 3)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 3)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 4)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 4)", ""))
 				}
 				{
-					p.SetState(35)
+					p.SetState(47)
 
 					var _lt = p.GetTokenStream().LT(1)
 
@@ -908,37 +1076,123 @@ func (p *CmdParser) expression(_p int) (localctx IExpressionContext) {
 					}
 				}
 				{
-					p.SetState(36)
-					p.expression(4)
-				}
-
-			case 3:
-				localctx = NewFuncContext(p, NewExpressionContext(p, _parentctx, _parentState))
-				p.PushNewRecursionContext(localctx, _startState, CmdParserRULE_expression)
-				p.SetState(37)
-
-				if !(p.Precpred(p.GetParserRuleContext(), 2)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 2)", ""))
-				}
-				{
-					p.SetState(38)
-					p.Match(CmdParserT__0)
-				}
-				{
-					p.SetState(39)
-					p.expression(0)
-				}
-				{
-					p.SetState(40)
-					p.Match(CmdParserT__1)
+					p.SetState(48)
+					p.expression(5)
 				}
 
 			}
 
 		}
-		p.SetState(46)
+		p.SetState(53)
 		p.GetErrorHandler().Sync(p)
-		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 4, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 5, p.GetParserRuleContext())
+	}
+
+	return localctx
+}
+
+// IFunContext is an interface to support dynamic dispatch.
+type IFunContext interface {
+	antlr.ParserRuleContext
+
+	// GetParser returns the parser.
+	GetParser() antlr.Parser
+
+	// IsFunContext differentiates from other interfaces.
+	IsFunContext()
+}
+
+type FunContext struct {
+	*antlr.BaseParserRuleContext
+	parser antlr.Parser
+}
+
+func NewEmptyFunContext() *FunContext {
+	var p = new(FunContext)
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(nil, -1)
+	p.RuleIndex = CmdParserRULE_fun
+	return p
+}
+
+func (*FunContext) IsFunContext() {}
+
+func NewFunContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *FunContext {
+	var p = new(FunContext)
+
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(parent, invokingState)
+
+	p.parser = parser
+	p.RuleIndex = CmdParserRULE_fun
+
+	return p
+}
+
+func (s *FunContext) GetParser() antlr.Parser { return s.parser }
+
+func (s *FunContext) AllVAR() []antlr.TerminalNode {
+	return s.GetTokens(CmdParserVAR)
+}
+
+func (s *FunContext) VAR(i int) antlr.TerminalNode {
+	return s.GetToken(CmdParserVAR, i)
+}
+
+func (s *FunContext) GetRuleContext() antlr.RuleContext {
+	return s
+}
+
+func (s *FunContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
+	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *FunContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(CmdListener); ok {
+		listenerT.EnterFun(s)
+	}
+}
+
+func (s *FunContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(CmdListener); ok {
+		listenerT.ExitFun(s)
+	}
+}
+
+func (p *CmdParser) Fun() (localctx IFunContext) {
+	localctx = NewFunContext(p, p.GetParserRuleContext(), p.GetState())
+	p.EnterRule(localctx, 8, CmdParserRULE_fun)
+
+	defer func() {
+		p.ExitRule()
+	}()
+
+	defer func() {
+		if err := recover(); err != nil {
+			if v, ok := err.(antlr.RecognitionException); ok {
+				localctx.SetException(v)
+				p.GetErrorHandler().ReportError(p, v)
+				p.GetErrorHandler().Recover(p, v)
+			} else {
+				panic(err)
+			}
+		}
+	}()
+
+	p.EnterOuterAlt(localctx, 1)
+	{
+		p.SetState(54)
+		p.Match(CmdParserVAR)
+	}
+	{
+		p.SetState(55)
+		p.Match(CmdParserT__0)
+	}
+	{
+		p.SetState(56)
+		p.Match(CmdParserVAR)
+	}
+	{
+		p.SetState(57)
+		p.Match(CmdParserT__1)
 	}
 
 	return localctx
@@ -1008,7 +1262,7 @@ func (s *PrefixContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *CmdParser) Prefix() (localctx IPrefixContext) {
 	localctx = NewPrefixContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 8, CmdParserRULE_prefix)
+	p.EnterRule(localctx, 10, CmdParserRULE_prefix)
 
 	defer func() {
 		p.ExitRule()
@@ -1028,7 +1282,7 @@ func (p *CmdParser) Prefix() (localctx IPrefixContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(47)
+		p.SetState(59)
 		p.Match(CmdParserNWE)
 	}
 
@@ -1052,13 +1306,10 @@ func (p *CmdParser) Sempred(localctx antlr.RuleContext, ruleIndex, predIndex int
 func (p *CmdParser) Expression_Sempred(localctx antlr.RuleContext, predIndex int) bool {
 	switch predIndex {
 	case 0:
-		return p.Precpred(p.GetParserRuleContext(), 4)
+		return p.Precpred(p.GetParserRuleContext(), 5)
 
 	case 1:
-		return p.Precpred(p.GetParserRuleContext(), 3)
-
-	case 2:
-		return p.Precpred(p.GetParserRuleContext(), 2)
+		return p.Precpred(p.GetParserRuleContext(), 4)
 
 	default:
 		panic("No predicate with index: " + fmt.Sprint(predIndex))

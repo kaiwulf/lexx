@@ -1,27 +1,48 @@
 // cmd.g4
 grammar Cmd;
 
+// Fragments
+fragment N      : ('n') ;
+fragment E      : ('e') ;
+fragment W      : ('w') ;
+fragment DIGIT  : [0-9];
+
+
 // Tokens
-// NEW: 'new';
 MUL: '*' ;
 DIV: '/' ;
 ADD: '+' ;
 SUB: '-' ;
-NUMBER: [0-9]+;
+NEW: N E W ;
+NWE: N W E ;    // place holder
+NUMBER: DIGIT+ ([.,] DIGIT+)? ;
 WHITESPACE: [ \r\n\t]+ -> skip;
+NEWLINE : ('\r'? '\n' | '\r')+ ;
 VAR: [a-zA-Z];
 
 // Rules
 start: 
-    command
-    | expression EOF;
+    line+ EOF;
 
+line: (command | expression | prefix | fun | NEWLINE)+;
 
 command
-    : op=('new') VAR;
+    : NEW VAR;
 
 expression
    : expression op=('*'|'/') expression # MulDiv
    | expression op=('+'|'-') expression # AddSub
+   | op=('*'|'/') expression expression # MulDivPre
+   | op=('+'|'-') expression expression # AddSubPre
    | NUMBER                             # Number
    ;
+
+fun
+    : VAR '(' VAR ')';
+
+prefix
+//    : op=('*'|'/') expression expression # MulDivPre
+//    | op=('*'|'/') expression expression # AddSubPre
+//    | NUMBER                             # Number
+    : NWE
+    ;

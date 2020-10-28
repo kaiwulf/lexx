@@ -1,4 +1,4 @@
-// Code generated from Cmd.g4 by ANTLR 4.7.1. DO NOT EDIT.
+// Code generated from cmd/Cmd.g4 by ANTLR 4.7.1. DO NOT EDIT.
 
 package parser // Cmd
 
@@ -39,17 +39,23 @@ func (s *BaseCmdListener) EnterCommand(ctx *CommandContext) {}
 // ExitCommand is called when production command is exited.
 func (s *BaseCmdListener) ExitCommand(ctx *CommandContext) {}
 
+// EnterMulDivPre is called when production MulDivPre is entered.
+func (s *BaseCmdListener) EnterMulDivPre(ctx *MulDivPreContext) {}
+
+// ExitMulDivPre is called when production MulDivPre is exited.
+func (s *BaseCmdListener) ExitMulDivPre(ctx *MulDivPreContext) {}
+
+// EnterAddSubPre is called when production AddSubPre is entered.
+func (s *BaseCmdListener) EnterAddSubPre(ctx *AddSubPreContext) {}
+
+// ExitAddSubPre is called when production AddSubPre is exited.
+func (s *BaseCmdListener) ExitAddSubPre(ctx *AddSubPreContext) {}
+
 // EnterNumber is called when production Number is entered.
 func (s *BaseCmdListener) EnterNumber(ctx *NumberContext) {}
 
 // ExitNumber is called when production Number is exited.
 func (s *BaseCmdListener) ExitNumber(ctx *NumberContext) {}
-
-// EnterFunc is called when production func is entered.
-func (s *BaseCmdListener) EnterFunc(ctx *FuncContext) {}
-
-// ExitFunc is called when production func is exited.
-func (s *BaseCmdListener) ExitFunc(ctx *FuncContext) {}
 
 // EnterMulDiv is called when production MulDiv is entered.
 func (s *BaseCmdListener) EnterMulDiv(ctx *MulDivContext) {}
@@ -62,6 +68,12 @@ func (s *BaseCmdListener) EnterAddSub(ctx *AddSubContext) {}
 
 // ExitAddSub is called when production AddSub is exited.
 func (s *BaseCmdListener) ExitAddSub(ctx *AddSubContext) {}
+
+// EnterFun is called when production fun is entered.
+func (s *BaseCmdListener) EnterFun(ctx *FunContext) {}
+
+// ExitFun is called when production fun is exited.
+func (s *BaseCmdListener) ExitFun(ctx *FunContext) {}
 
 // EnterPrefix is called when production prefix is entered.
 func (s *BaseCmdListener) EnterPrefix(ctx *PrefixContext) {}
