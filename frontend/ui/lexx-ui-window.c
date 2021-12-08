@@ -146,14 +146,14 @@ init_shaders (guint   *program_out,
   guint color_location = 0;
 
   /* load the vertex shader */
-  source = g_resources_lookup_data ("/ui/frontend/lexx/lexx-vertex.glsl", 0, NULL);
+  source = g_resources_lookup_data ("/ui/frontend/lexx/lexx-ui-vertex.glsl", 0, NULL);
   create_shader (GL_VERTEX_SHADER, g_bytes_get_data (source, NULL), error, &vertex);
   g_bytes_unref (source);
   if (vertex == 0)
     goto out;
 
   /* load the fragment shader */
-  source = g_resources_lookup_data ("/ui/frontend/lexx/lexx-fragment.glsl", 0, NULL);
+  source = g_resources_lookup_data ("/ui/frontend/lexx/lexx-ui-fragment.glsl", 0, NULL);
   create_shader (GL_FRAGMENT_SHADER, g_bytes_get_data (source, NULL), error, &fragment);
   g_bytes_unref (source);
   if (fragment == 0)
