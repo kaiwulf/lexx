@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gresources>
-  <gresource prefix="/ui/frontend/lexx">
-    <file preprocess="xml-stripblanks">lexx-ui-window.ui</file>
-    <file preprocess="xml-stripblanks">lexx-ui-menu.ui</file>
-    <file>lexx-ui-fragment.glsl</file>
-    <file>lexx-ui-vertex.glsl</file>
-  </gresource>
-</gresources>
